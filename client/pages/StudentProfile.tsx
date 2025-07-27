@@ -124,7 +124,7 @@ export default function StudentProfile() {
       setError(null);
       
       // Make GET request using axios - Updated URL
-      const response = await axios.get('https://e23423032121.ngrok-free.app/students/', {
+      const response = await axios.get('https://cf02a2aac7b6.ngrok-free.app/students/', {
         headers: {
           'ngrok-skip-browser-warning': 'true',
         }

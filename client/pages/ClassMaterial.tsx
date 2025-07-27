@@ -67,7 +67,7 @@ export default function ClassMaterial() {
 
     try {
       const classNumber = selectedClass.split(" ")[1] || selectedClass;
-      const url = `https://e23423032121.ngrok-free.app/fetch_chapters/?class_name=${classNumber}&subject=${selectedSubject}`;
+      const url = `https://cf02a2aac7b6.ngrok-free.app/fetch_chapters/?class_name=${classNumber}&subject=${selectedSubject}`;
 
       const response = await fetch(url, {
         method: 'GET',
@@ -120,7 +120,7 @@ export default function ClassMaterial() {
     setCreatingPlateFor(chapter.id || "");
     
     try {
-      const url = `https://e23423032121.ngrok-free.app/create_lecture_plate/?std=${classNumber}&subject=${selectedSubject}&chapter_no=${chapter.number}`;
+      const url = `https://cf02a2aac7b6.ngrok-free.app/create_lecture_plate/?std=${classNumber}&subject=${selectedSubject}&chapter_no=${chapter.number}`;
       
       const response = await fetch(url, {
         method: 'GET',
